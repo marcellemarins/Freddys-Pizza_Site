@@ -28,11 +28,11 @@ body{
 
 .header-logo > .tlogo {
     background-color: #f7f7f7;
-    width: 20%;
+    width: 18%;
     height: 84%;
     font-weight: bold;
     font-family: super_corn, Verdana, Geneva, Tahoma, sans-serif ;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: center;
     margin-top: 16px;
     margin-right: 200px;
@@ -40,28 +40,23 @@ body{
     box-sizing: border-box;
 }
 
-.r{
-    position: absolute;
-    left: 218px;
-    top: 30px;
-    font-size: 10px;
-    font-weight: bold;
-}
+
 
 .header-nav{
    
-    width: 80%;
+    width: 60%;
     height: 107%;
     display: flex;
     flex-direction: row;
     padding: 10px;
     margin-top: 13px;
+    justify-content: space-between;
 }
 
 .header-nav > a{
+    margin: 0 auto;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 50px;
     color: black;
     padding: 10px;
 }
@@ -76,16 +71,21 @@ body{
 }
 
 .sections {
-    font-size: 17px;
+    
+    font-size: 1.2vw;
     width: 85%;
+    height: auto;
     margin-top: 150px;
     display: flex;
     flex-direction: row;
 }
 
 .secDireita{
-    margin-left: 200px;
+    /*tirei o margin-left: 200px*/
+    float: right;
     padding: 0;
+    margin-bottom: 30px;
+    
 }
 
 .sections > figure > img {
@@ -94,8 +94,14 @@ body{
     border-radius: 3px;
 }
 
+.sections p {
+    width: auto;
+    height: auto;
+}
+
 .secDireita > div {
     
+    max-height: 300px;
     margin: 16px -15px 30px 30px;
     
   padding-left: 30px;
@@ -114,7 +120,7 @@ body{
 
 .secEsquerda > div {
     margin: 16px 30px 30px -15px;
-
+    max-height: 300px;
     padding-right: 30px;
    
 }
@@ -126,6 +132,7 @@ body{
 
 .section1{
     margin-top: 110px;
+    margin-bottom: 150px;
 }
 
 .botao{
@@ -156,19 +163,23 @@ body{
 
 .contato {
     background-color: rgb(83, 81, 81);
-    width: 100%;
+    width: 80%;
     height: 220px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-around;   
     box-sizing: border-box;
+    border-bottom: 3px solid #000000;
+    
 
 }
 
 .footer_logo > img{
-    width: 200px;
-    height:180px;
+    margin: auto;
+    max-height: 180px;
+    max-width: 200px;
 }
 
 .lista_contato{
@@ -191,4 +202,9 @@ body{
 
 .direitos{
     text-align: center;
+    background-color: rgb(83, 81, 81);
+}
+
+footer{
+    background-color: rgb(83, 81, 81);
 }
